@@ -19,7 +19,7 @@ public class AlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
-        mediaPlayer=MediaPlayer.create(this,getAlarmUri());
+        mediaPlayer=MediaPlayer.create(getBaseContext(),getAlarmUri());
         mediaPlayer.start();
 
         dismiss=findViewById(R.id.dismiss);

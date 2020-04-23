@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 calendar.set(Calendar.HOUR_OF_DAY, Integer.parseInt(hh.getText().toString()));
-                calendar.set(Calendar.MINUTE, Integer.parseInt(hh.getText().toString()));
+                calendar.set(Calendar.MINUTE, Integer.parseInt(mm.getText().toString()));
 
                 Intent sendAlarm = new Intent(MainActivity.this,AlarmReceiver.class);
 
